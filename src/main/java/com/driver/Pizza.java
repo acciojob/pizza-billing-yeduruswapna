@@ -11,8 +11,8 @@ public class Pizza {
     public static int vegToppingPrice=70;
     public static int nonVegToppingPrice=120;
     public static int takeAwayPrice=20;
-    private int basePrice=0;
-    private int myToppingPrice=0;
+    private int basePrice= 0;
+    private int myToppingPrice= 0;
     private boolean isCheeseAdded;
     private boolean isToppingAdded;
     private boolean isTakeAwayAdded;
@@ -21,7 +21,7 @@ public class Pizza {
         this.isVeg = isVeg;
         // your code goes here
         this.basePrice= isVeg? vegBasePrice : nonVegBasePrice;
-        this.price=0;
+        this.price= 0;
         this.bill= " ";
         this.isCheeseAdded=false;
         this.isToppingAdded=false;
@@ -64,7 +64,7 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        String bill="BasePrice of the pizza: " + this.basePrice + "\n";
+        String bill="Base Price of the Pizza: " + this.basePrice + "\n";
         if(isCheeseAdded){
             bill+="Extra Cheese Added:" + cheesePrice + "\n";
         }
@@ -74,7 +74,7 @@ public class Pizza {
         if(isTakeAwayAdded)
             bill+= "Paperbag Added : " + takeAwayPrice+ "\n";
 
-        bill+= "Total Price: " + this.price + "\n";
+        bill += "Total Price: " + this.price + "\n";
         this.bill=bill;
         return this.bill;
     }
