@@ -64,17 +64,17 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        String bill="Base Price of the Pizza: " + this.basePrice + "\n";
+        String bill="Base Price of the Pizza:" + this.basePrice + "\n";
         if(isCheeseAdded){
             bill+="Extra Cheese Added:" + cheesePrice + "\n";
         }
         if(isToppingAdded){
-            bill+="Extra Toppings Added: " + myToppingPrice + "\n";
+            bill+="Extra Toppings Added:" + myToppingPrice + "\n";
         }
         if(isTakeAwayAdded)
-            bill+= "Paperbag Added : " + takeAwayPrice+ "\n";
+            bill+= "Paperbag Added:" + takeAwayPrice+ "\n";
 
-        bill += "Total Price: " + this.price + "\n";
+        bill += "Total Price:" + this.price + "\n";
         this.bill=bill;
         return this.bill;
     }
