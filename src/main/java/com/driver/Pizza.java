@@ -8,7 +8,7 @@ public class Pizza {
 
     public static int vegBasePrice=300;
     public static int nonvegBasePrice=400;
-    public static int myCheesePrice=0;
+    public static int myCheesePrice=80;
     public static int vegToppingPrice=70;
     public static int nonvegToppingPrice=120;
     public static int takeAwayPrice=20;
@@ -61,9 +61,10 @@ public class Pizza {
     public void addExtraCheese() {
         // your code goes here
         if(!isCheeseAdded) {
-            this.myCheesePrice += cheeseAdder.addCheese(isCheeseAdded, cheeseType);
+            this.myCheesePrice = cheeseAdder.addCheese(isCheeseAdded, cheeseType);
             isCheeseAdded = true;
         }
+
     }
 
     public void addExtraToppings() {

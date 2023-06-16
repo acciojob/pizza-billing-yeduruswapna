@@ -7,6 +7,7 @@ public class DeluxePizza extends Pizza {
         // your code goes here
         super.addExtraCheese();
         super.addExtraToppings();
+        super.addTakeaway();
         //super(isVeg, new DeluxePizzaBillGenerator(), new PizzaCheeseAdder());
     }
 }
