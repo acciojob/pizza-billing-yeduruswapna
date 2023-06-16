@@ -60,8 +60,10 @@ public class Pizza {
 
     public void addExtraCheese() {
         // your code goes here
-        this.myCheesePrice+=cheeseAdder.addCheese(isCheeseAdded, cheeseType);
-        isCheeseAdded=true;
+        if(!isCheeseAdded) {
+            this.myCheesePrice += cheeseAdder.addCheese(isCheeseAdded, cheeseType);
+            isCheeseAdded = true;
+        }
     }
 
     public void addExtraToppings() {
